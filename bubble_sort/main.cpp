@@ -8,7 +8,7 @@ std::vector<int> input_vector()
   std::vector<int> V;
   std::string line;
   std::cout << "Enter numbers separated with space: ";
-  getline(std::cin, line);
+  std::getline(std::cin, line);
   std::stringstream line_stream(line);
 
   while (not line_stream.eof())
