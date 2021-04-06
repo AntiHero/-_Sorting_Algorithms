@@ -6,8 +6,10 @@
 void selection_sort(std::vector<int> &V) {
     std::cout << "selection sort" << std::endl;
 
-    for (int pos = 0; pos < int(V.size()) - 1; pos++) {
-        for (int i = pos + 1; i < int(V.size()); i++) {
+    int N = int(V.size());
+
+    for (int pos = 0; pos < N - 1; pos++) {
+        for (int i = pos + 1; i < N; i++) {
             if (V[i] < V[pos]) {
                 std::swap(V[i], V[pos]);
             }
