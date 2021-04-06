@@ -31,3 +31,18 @@ void print_vector(const std::vector<int> &V)
 
     std::cout << '\n';
 }
+
+bool is_ascending_order(const std::vector<int> &V)
+{
+    int i = 0;
+    while (i < int(V.size() - 1))
+    {
+        if (V[i] > V[i + 1])
+        {
+            return false;
+        }
+        i++;
+    }
+
+    return true;
+}

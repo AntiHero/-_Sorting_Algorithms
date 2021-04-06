@@ -24,21 +24,6 @@ void bubble_sort(std::vector<int> &V)
   }
 }
 
-bool is_ascending_order(const std::vector<int> &V)
-{
-  int i = 0;
-  while (i < int(V.size() - 1))
-  {
-    if (V[i] > V[i + 1])
-    {
-      return false;
-    }
-    i++;
-  }
-
-  return true;
-}
-
 int main()
 {
   std::vector<int> V;
