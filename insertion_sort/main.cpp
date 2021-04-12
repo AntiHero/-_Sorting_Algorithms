@@ -15,8 +15,6 @@ void insertion_sort(std::vector<int> &V) {
             std::swap(V[i - 1], V[i]);
             i -= 1;
         }
-
-        print_vector(V);
     }
 }
 
@@ -26,6 +24,7 @@ int main() {
     V = input_vector();
     print_vector(V);
     insertion_sort(V);
+    print_vector(V);
 
     if (is_ascending_order(V)) {
         std::cout << "ascending\n";

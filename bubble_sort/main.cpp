@@ -18,7 +18,6 @@ void bubble_sort(std::vector<int> &V) {
             }
         }
         bypass_counter++;
-        print_vector(V);
     }
 }
 
@@ -28,6 +27,7 @@ int main() {
     V = input_vector();
     print_vector(V);
     bubble_sort(V);
+    print_vector(V);
 
     if (is_ascending_order(V)) {
         std::cout << "ascending\n";

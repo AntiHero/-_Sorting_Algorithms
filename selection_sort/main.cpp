@@ -14,7 +14,6 @@ void selection_sort(std::vector<int> &V) {
                 std::swap(V[i], V[pos]);
             }
         }
-        print_vector(V);
     }
 }
 
@@ -24,6 +23,7 @@ int main() {
     V = input_vector();
     print_vector(V);
     selection_sort(V);
+    print_vector(V);
 
     if (is_ascending_order(V)) {
         std::cout << "ascending\n";

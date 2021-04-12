@@ -30,8 +30,6 @@ void counting_sort(std::vector<int> &V) {
             n++;
         }
     }
-
-    print_vector(V);
 }
 
 int main() {
@@ -41,6 +39,7 @@ int main() {
     V = input_vector();
     print_vector(V);
     counting_sort(V);
+    print_vector(V);
 
     if (is_ascending_order(V)) {
         std::cout << "ascending\n";
